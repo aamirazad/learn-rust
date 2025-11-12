@@ -34,6 +34,23 @@ fn main() {
 	let condition = true;
 	let result = if condition { 5 } else { 6 };
 	println!("{result}");
+	// Loops
+	let mut count = 0;
+	let result = loop {
+	    count += 1;
+	    if count == 10 {
+	        break count;
+	    }
+	};
+	println!("{result}");
+	
+	while count < 20 {
+	    count += 1;
+	}
+	println!("{count}");
+	for number in 1..4 {
+	    println!("{number}");
+	}
 }
 
 fn add_number(x1: i32, x2: i32) -> i32 {
