@@ -22,4 +22,14 @@ fn main() {
     println!("s1 = {s1}, s2 = {s2}");
     // We do not need to clone variables of known
     // size (Copy trait) like numbers
+
+    // ownership
+
+    let a = String::from("hello");
+
+    takes_ownership(s);
+}
+
+fn takes_ownership(some_string: String) {
+    println!("{some_string}");
 }
