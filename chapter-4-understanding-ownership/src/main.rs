@@ -26,8 +26,13 @@ fn main() {
     // ownership
 
     let a = String::from("hello");
+	// string moves into the function
+    takes_ownership(a);
+	
 
-    takes_ownership(s);
+	let x = 5;
+	makes_copy(x);
+	println!("See {x} is still usable")
 }
 
 fn takes_ownership(some_string: String) {
@@ -36,4 +41,8 @@ fn takes_ownership(some_string: String) {
 
 fn makes_copy(some_integer: i32) {
 	println!("{some_integer}");
+}
+
+fn gives_ownership() -> String {
+	
 }
