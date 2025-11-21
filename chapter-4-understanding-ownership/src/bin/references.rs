@@ -36,6 +36,6 @@ fn no_dangle() -> String {
 
     s
     // We cannot return a reference here because
-    // the s it is refering to would go out of scope
+    // the s it is referring to would go out of scope
     // before it is used creating a dangling pointer
 }
